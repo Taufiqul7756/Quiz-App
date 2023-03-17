@@ -38,5 +38,59 @@
         <button>Start Quiz</button>
       </div>
     </div>
+
+    <!-- Rules For Quiz -->
+
+    <div class="RulesBox">
+      <div class="RulesTitle">Some Rules of this Quiz</div>
+      <div class="RulesList">
+        <ol>
+          <li>
+            You will have only
+            <span style="color: #007bff">15 seconds</span> for each question.
+          </li>
+          <li>Once you select your answer, it can't be undone.</li>
+          <li>You can't select any option once time goes off.</li>
+          <li>You can't exit from the Quiz while you're playing.</li>
+          <li>You'll get points on the basis of your correct answers.</li>
+        </ol>
+      </div>
+
+      <div class="Buttons">
+        <button class="ExitButton">Exit Quiz</button>
+        <button class="ContinueButton">Continue</button>
+      </div>
+    </div>
+
+    <!-- Questions showing -->
+
+    <div class="Questions">
+      <header class="QuestionsHeader">
+        <div class="title">Start Exam</div>
+
+        <div class="TimeCount">
+          <div class="TimeLeft">Time Left</div>
+          <div class="Seconds">15</div>
+        </div>
+
+        <div class="time_lines"></div>
+      </header>
+
+      <div class="section">
+        <div class="text"></div>
+
+        <div class="MyOptions"></div>
+      </div>
+
+      <footer>
+        <div class="total_que"></div>
+        <button class="nextBtn">Next Que</button>
+      </footer>
+    </div>
+
+    <!-- Js file connected  -->
+
+    <script src="js/script.js"></script>
+    <script src="js/questions.js"></script>
   </body>
 </html>
