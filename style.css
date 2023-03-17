@@ -271,14 +271,14 @@ footer .nextBtn:hover {
 }
 
 .result_box {
-  width: 320px;
-  height: 580px;
+  width: 720px;
+  height: 680px;
   position: absolute;
   top: 50%;
   left: 50%;
   display: flex;
   background-color: #fff;
-  border-radius: 45px;
+  border-radius: 48px;
   align-items: center;
   flex-direction: column;
   justify-content: center;

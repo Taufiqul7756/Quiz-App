@@ -10,8 +10,8 @@ const timeOff = document.querySelector(".QuestionsHeader .TimeLeft");
 
 MyBtn.onclick = () => {
   RulesBox.classList.add("activeInfo");
-  console.log("clicked");
 };
+
 exitButton.onclick = () => {
   RulesBox.classList.remove("activeInfo");
 };
@@ -74,7 +74,7 @@ nextBtn.onclick = () => {
   } else {
     clearInterval(counter);
     clearInterval(counterLine);
-    console.log("You Have Completed Your Task 🥰");
+    console.log("You Have Completd Your Task 🥰");
     showResultBox();
   }
 };
@@ -153,7 +153,7 @@ function optionSelected(answer) {
 function showResultBox() {
   RulesBox.classList.remove("activeInfo");
   Questions.classList.remove("activeQuiz");
-  reslut_box.classList.add("activeResult");
+  result_box.classList.add("activeResult");
 
   const scoreText = document.querySelector(".score_text");
   if (userScore > 3) {
