@@ -183,3 +183,22 @@ ol li {
   border: 1px solid #343a40;
   user-select: none;
 }
+.section {
+  padding: 25px 30px 20px 30px;
+}
+.text {
+  font-size: 25px;
+  font-weight: 600;
+}
+.MyOptions {
+  padding: 20px 0px;
+  display: block;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgrey;
+}
