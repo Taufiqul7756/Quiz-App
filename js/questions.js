@@ -2,8 +2,8 @@ let questions = [
   {
     numb: 1,
     question: "Inside which HTML element do we put the JavaScript?",
-    answer: "Hyper Text Markup Language",
-    options: ["<scripting>", "<script>", "<JavaScript>", "<js>>"],
+    answer: "script",
+    options: ["scripting", "script", "JavaScript", "js"],
   },
   {
     numb: 2,
@@ -30,12 +30,13 @@ let questions = [
     answer: "const",
     options: ["const", "var", "let", "constant"],
   },
-  //   {
-  //     numb: 5,
-  //     question: "",
-  //     answer: "",
-  //     options: ["", "", "", ""],
-  //   },
+  {
+    numb: 5,
+    question:
+      "What keyword is used to check whether a given property is valid or not? ",
+    answer: "in",
+    options: ["in", "is in", "exists", "lies"],
+  },
   //   {
   //     numb: 6,
   //     question: "",
