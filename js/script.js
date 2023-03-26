@@ -20,7 +20,7 @@ ContinueButton.onclick = () => {
   RulesBox.classList.remove("activeInfo");
   Questions.classList.add("activeQuiz");
   showQuestions(0);
-  startTimer(15);
+  startTimer(30);
 
   startTimerLine(0);
 };
@@ -35,7 +35,7 @@ restart_quiz.onclick = () => {
   Questions.classList.add("activeQuiz");
   result_box.classList.remove("activeResult");
   let que_count = 0;
-  let timeValue = 15;
+  let timeValue = 30;
 
   let widthValue = 0;
   let userScore = 0;
@@ -54,7 +54,7 @@ quit_quiz.onclick = () => {
 
 let que_count = 0;
 let counter;
-let timeValue = 15;
+let timeValue = 30;
 
 let counterLine;
 let widthValue = 0;
@@ -74,7 +74,7 @@ nextBtn.onclick = () => {
   } else {
     clearInterval(counter);
     clearInterval(counterLine);
-    console.log("You Have Completd Your Task 🥰");
+    console.log("You Have Completed Your Task.");
     showResultBox();
   }
 };
@@ -105,7 +105,8 @@ function showQuestions(index) {
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
   const total_que = document.querySelector(".total_que");
-  let total_queTag = "<p>" + questions[index].numb + " Of 5 </p>";
+  let total_queTag =
+    "<p>" + questions[index].numb + " Of " + questions.length + "</p>";
   total_que.innerHTML = total_queTag;
 
   const option = option_list.querySelectorAll(".options");
@@ -217,11 +218,11 @@ function startTimer(time) {
 }
 
 function startTimerLine(time) {
-  counterLine = setInterval(timer, 50);
+  counterLine = setInterval(timer, 45);
   function timer() {
     time += 1;
     timeLine.style.width = time + "px";
-    if (time > 319) {
+    if (time > 687) {
       clearInterval(counterLine);
     }
   }
