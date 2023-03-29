@@ -44,12 +44,12 @@ let questions = [
     answer: "Object",
     options: ["Boolean", "Undefine", "Object", "Integer"],
   },
-  //   {
-  //     numb: 2,
-  //     question: "",
-  //     answer: "",
-  //     options: ["", "", "", ""],
-  //   },
+    {
+      numb: 7,
+      question: "When an operator’s value is NULL, the typeof returned by the unary operator is:",
+      answer: "Object",
+      options: ["Boolean", "Object", "Undefine", "Integer"],
+    },
   //   {
   //     numb: 2,
   //     question: "",
